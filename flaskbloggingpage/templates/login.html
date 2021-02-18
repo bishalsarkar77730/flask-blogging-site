@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.80.0">
+    <title>dashboard</title>
+
+    <script type="text/javascript"
+        src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=t2OlsTqFHX0_Uivl8crfhYn3MgrzcOGXUPhu-5mWRnw9lgUUZ1rOHrArIbofuXTMJ9kLplwbmJxJPt1wl_43LTneit9QF0KKuVuuPOg7Nnc"
+        charset="UTF-8"></script>
+    <link rel="stylesheet" crossorigin="anonymous"
+        href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9nZXRib290c3RyYXAuY29tL2RvY3MvNS4wL2V4YW1wbGVzL3NpZ24taW4v" />
+
+
+
+    <!-- Custom styles for this template -->
+    <link href="{{ url_for('static', filename='css/login.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/clean-blog.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet"
+        type="text/css">
+</head>
+
+<body class="text-center">
+
+    <main class="form-signin">
+        <form action="/dashboard" method="POST">
+            <h1 class="h3 mb-3 fw-normal">Admin Login</h1>
+            <!-- <label for="inputEmail" class="visually-hidden">Email address</label> -->
+            <input type="text" id="uname" name="uname" class="form-control" placeholder="User name" required autofocus>
+            <!-- <label for="inputPassword" class="visually-hidden">Password</label> -->
+            <input type="password" id="Pass" name="pass" class="form-control" placeholder="Password" required>
+            <div class="checkbox mb-3">
+                <label>
+                    <input type="checkbox" value="remember-me"> Remember me
+                </label>
+            </div>
+            <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+            <p class="mt-5 mb-3 text-muted">&copy; {{params['blog_name'] }} 2017–2021</p>
+        </form>
+    </main>
+
+
+
+</body>
+
+</html>

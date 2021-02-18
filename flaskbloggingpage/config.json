@@ -1,0 +1,19 @@
+{
+  "params":
+  {
+    "local_server": "True",
+    "local_url": "mysql://root:@localhost/thearchies",
+    "prod_url": "mysql://root:@localhost/thearchies",
+    "fb_url": "https://facebook.com",
+    "tw_url": "https://twitter.com",
+    "gh_url": "https://github.com",
+    "blog_name": "The Archies",
+    "gmail_user": "mailID",
+    "gmail_password": "password",
+    "about_text": "this is our about text",
+    "num_of_posts": 1,
+    "admin_user": "admin",
+    "admin_password": "admin",
+    "upload_location":"F:\\all projects\\flaskbloggingpage\\static\\img"
+  }
+}
